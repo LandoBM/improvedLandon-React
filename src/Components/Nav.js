@@ -1,11 +1,12 @@
+
 import React from 'react';
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <nav className="navbar navbar-expand-lg justify-content-end">
-      <li className="nav-item">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <li className="nav-item name">
         <a
           href="#home"
           onClick={() => handlePageChange('Home')}
@@ -13,10 +14,10 @@ function NavTabs({ currentPage, handlePageChange }) {
           // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
           className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
         >
-          Home
+          Landon B. Murray
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav-item list me-auto mb-2 mb-lg-0">
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
@@ -26,17 +27,17 @@ function NavTabs({ currentPage, handlePageChange }) {
           About
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav-item list me-auto mb-2 mb-lg-0">
         <a
-          href="#Websites"
-          onClick={() => handlePageChange('Websites')}
-          // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
+          href="#Portfolio"
+          onClick={() => handlePageChange('Portfolio')}
+          // Check to see if the currentPage is `Websites`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
         >
-          Deployments
+          Portfolio
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav-item list me-auto mb-2 mb-lg-0">
         <a
           href="#contact"
           onClick={() => handlePageChange('Contact')}
@@ -44,6 +45,16 @@ function NavTabs({ currentPage, handlePageChange }) {
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
         >
           Contact
+        </a>
+      </li>
+      <li className="nav-item list me-auto mb-2 mb-lg-0">
+        <a
+          href="#Resume"
+          onClick={() => handlePageChange('Resume')}
+          // Check to see if the currentPage is `Resume`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+        >
+          Resume
         </a>
       </li>
     </nav>

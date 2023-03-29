@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar {
+  background-color: dodgerblue;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.list {
+ justify-content: center;
+}
+
+.port {
+  /* width: 18%; */
+  margin: 2rem;
+  /* border-radius: 3px; */
+  box-shadow: 0.2px 4px 5px black;
+  background-color: rgba(0, 0, 0, 0.932);
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  height: 250px;
+  width: 300px;
+}
+
+.port:hover .overview {
+  transform: translateY(0);
+}
+
+  
+.btn {
+      background-color: black;
+  }
