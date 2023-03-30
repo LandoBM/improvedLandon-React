@@ -6,7 +6,7 @@ import node from '../images/node.jpeg'
 import reactPic from '../images/react.jpeg'
 import express from '../images/express.jpeg'
 
-const iWannasite = 'https://iwanna.herokuapp.com/'
+// const iWannasite = 'https://iwanna.herokuapp.com/'
 
 
 export default function Portfolio() {
