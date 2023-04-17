@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import Nav from './Components/pages/Nav'
 
 // Here we import bootstrap to have access to some additional styling
 // import 'bootstrap/dist/css/bootstrap.min.css';

@@ -1,23 +1,35 @@
-
 import React from 'react';
+import { Nav, Container } from 'react-bootstrap'
+import Navbar from 'react-bootstrap/Navbar'
+import logo from '../images/logo.png'
+
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
-function NavTabs({ currentPage, handlePageChange }) {
+export default function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <li className="nav-item name">
-        <a
-          href="#home"
-          onClick={() => handlePageChange('Home')}
-          // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-          // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-        >
-          Landon B. Murray
-        </a>
-      </li>
-      <li className="nav-item list me-auto mb-2 mb-lg-0">
+    <>
+    <Navbar bg='white' expand='lg'>
+      <Container>
+      <Navbar.Brand
+        href="#about"
+        onClick={() => handlePageChange('About')}
+        // This is a conditional (ternary) operator that checks to see if the current page is "Home"
+        // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
+        className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+      >
+        <img 
+          src={logo}
+          className='d-inline-block align-top logo'
+          alt="Landon's Logo"
+        />
+      </Navbar.Brand>
+      </Container>
+      {/* <Container> */}
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav" className='collapse'>
+      <Nav className='me-auto'>
+      <Nav.Link className="nav-item list me-auto mb-2 mb-lg-0">
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
@@ -26,8 +38,8 @@ function NavTabs({ currentPage, handlePageChange }) {
         >
           About
         </a>
-      </li>
-      <li className="nav-item list me-auto mb-2 mb-lg-0">
+      </Nav.Link>
+      <Nav.Link className="nav-item list me-auto mb-2 mb-lg-0">
         <a
           href="#Portfolio"
           onClick={() => handlePageChange('Portfolio')}
@@ -36,8 +48,8 @@ function NavTabs({ currentPage, handlePageChange }) {
         >
           Portfolio
         </a>
-      </li>
-      <li className="nav-item list me-auto mb-2 mb-lg-0">
+      </Nav.Link>
+      <Nav.Link className="nav-item list me-auto mb-2 mb-lg-0">
         <a
           href="#contact"
           onClick={() => handlePageChange('Contact')}
@@ -46,8 +58,8 @@ function NavTabs({ currentPage, handlePageChange }) {
         >
           Contact
         </a>
-      </li>
-      <li className="nav-item list me-auto mb-2 mb-lg-0">
+      </Nav.Link>
+      <Nav.Link className="nav-item list me-auto mb-2 mb-lg-0">
         <a
           href="#Resume"
           onClick={() => handlePageChange('Resume')}
@@ -56,9 +68,13 @@ function NavTabs({ currentPage, handlePageChange }) {
         >
           Resume
         </a>
-      </li>
-    </nav>
+      </Nav.Link>
+      </Nav>
+      {/* </Container> */}
+      </Navbar.Collapse>
+    </Navbar>
+    </>
   );
 }
 
-export default NavTabs;
+// export default NavTabs;

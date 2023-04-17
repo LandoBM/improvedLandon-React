@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
-import './App.css';
-import PortfolioContainer from "./Components/PortfolioCont"
+import "./App.css";
+import PortfolioContainer from "./Components/pages/PortfolioCont";
 
 function App() {
   // return (
@@ -21,7 +21,7 @@ function App() {
   //     </header>
   //   </div>
   // );
-  return <PortfolioContainer />
+  return <PortfolioContainer />;
 }
 
 export default App;
