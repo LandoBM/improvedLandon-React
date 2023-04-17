@@ -12,9 +12,9 @@ export default function About() {
         <Image src={facePic} alt='Avatar' className='profilePic' roundedCircle/>
         </Col>
         <Col>
-          <p>
+          <p style={{fontFamily: 'serif'}}>
             <p>Hi, I'm Landon! </p>
-            <p>I am a full-stack developer based in Atlanta, GA with experience in HTML/CSS/JavaScript and more. 
+            <p>I am a full-stack developer based in Atlanta, GA with experience in MERN Stack and more. 
             To make a long story short, I have skills to build websites that can help organizations address business challenges and meet their business needs.
             </p>
             <p>
@@ -24,6 +24,10 @@ export default function About() {
               than I thought was involved in programming. There were so many instances where I doubted myself while coding especially when something was not working, or I felt
               like I just wanted to give up but I had a wonderful support system and amazing cohorts whom kept the encouragement and held each other up. 
             </p>
+            <p>
+              Other than coding and building on my skill set, I am a lover of nature. I love hiking in the North Georgia Mountains, visiting different waterfalls, and going to the gym. Some would call me a gym rat, but I see it as a place to escape my reality. 
+              I am a family guy and love dogs! I currently have a Yorkshire Terrior that goes by Bear. Bear's pronouns are he/him. I also enjoy tea and visiting coffee shops to work or code.  
+            </p>
             {/* I have developed many types of front-end and back-end from a Dating Movie application to a You List it, and Sell it application.
             I like to craft solid and ascendable user friendly applications. */}
           </p>
@@ -32,6 +36,7 @@ export default function About() {
       </Row>
       </Container>
       <div style={{backgroundColor:'green', textAlign: 'center'}}>
+      <h5>Connect with me!</h5>
             {/* <!-- Facebook --> */}
       <a
         className="btn btn-outline-light btn-floating m-1"
