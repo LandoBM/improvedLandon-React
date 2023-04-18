@@ -9,7 +9,7 @@ export default function About() {
       <Container>
       <Row>
         <Col>
-        <Image src={facePic} alt='Avatar' className='profilePic' roundedCircle/>
+        <Image src={facePic} alt='Avatar' className='profilePic' roundedCircle style={{minHeight:'90vh', minWidth:'70vh'}}/>
         </Col>
         <Col>
           <p style={{fontFamily: 'serif'}}>
