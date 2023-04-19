@@ -35,52 +35,8 @@ export default function About() {
         </Col>
       </Row>
       </Container>
-      <div style={{backgroundColor:'green', textAlign: 'center'}}>
-      <h5>Connect with me!</h5>
-            {/* <!-- Facebook --> */}
-      <a
-        className="btn btn-outline-light btn-floating m-1"
-        href="https://www.facebook.com/landon.murray.144"
-        role="button"
-      >
-        <i className="fa-brands fa-facebook"></i>
-      </a>
-  
-            {/* <!-- Twitter --> */}
-      <a
-        className="btn btn-outline-light btn-floating m-1"
-        href="https://twitter.com/codewithlandon!"
-        role="button"
-      >
-        <i className="fab fa-twitter"></i>
-      </a>
-  
-            {/* <!-- Instagram --> */}
-      <a
-        className="btn btn-outline-light btn-floating m-1"
-        href="https://www.instagram.com/codew.landon/"
-        role="button"
-      >
-        <i className="fab fa-instagram"></i>
-      </a>
-  
-            {/* <!-- Linkedin --> */}
-      <a
-        className="btn btn-outline-light btn-floating m-1"
-        href="https://www.linkedin.com/in/landonbmurray"
-        role="button"
-      >
-        <i className="fab fa-linkedin-in"></i>
-      </a>
-  
-            {/* <!-- Github --> */}
-      <a
-        className="btn btn-outline-light btn-floating m-1"
-        href="https://github.com/LandoBM"
-        role="button"
-      >
-        <i className="fab fa-github"></i>
-      </a>
+      <div style={{backgroundColor:'green'}}>
+        .
       </div>
     </div>
   );

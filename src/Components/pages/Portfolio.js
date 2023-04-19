@@ -5,7 +5,7 @@ import Notes from '../images/notes.gif'
 import Chat from '../images/chat.png'
 import Api from '../images/api.png'
 import iWanna from '../images/iWanna.png'
-import express from '../images/express.jpeg'
+import Mvc from '../images/mvc.png'
 
 // const iWannasite = 'https://iwanna.herokuapp.com/'
 
@@ -128,7 +128,7 @@ export default function Portfolio() {
             This application uses Node.js, Express.js, and MVC.
             </Card.Text>
             <Button variant="primary" href="https://iwanna.herokuapp.com/">
-              Go somewhere</Button>
+              iWanna</Button>
             <a
             className="btn btn-outline-light btn-floating m-1"
             href="https://github.com/LandoBM/iWanna"
@@ -150,7 +150,7 @@ export default function Portfolio() {
             Movie dating made easy.
             </Card.Text>
             <Button variant="primary" href="https://landobm.github.io/Minder-DatingwithMovies/">
-              Go somewhere</Button>
+              Minder Dating</Button>
             <a
             className="btn btn-outline-light btn-floating m-1"
             href="https://github.com/LandoBM/Minder-DatingwithMovies"
@@ -173,7 +173,7 @@ export default function Portfolio() {
             Every note received will be saved and retrieved from the data JSON file.
             </Card.Text>
             <Button variant="primary" href="https://business-noter.herokuapp.com/">
-              Go somewhere</Button>
+              Note Taking</Button>
             <a
             className="btn btn-outline-light btn-floating m-1"
             href="https://github.com/LandoBM/business-notes"
@@ -193,7 +193,7 @@ export default function Portfolio() {
               the user had in another chat. 
             </Card.Text>
             <Button variant="primary" href='https://chat-social-4-6-22.herokuapp.com/'>
-              Go somewhere</Button>
+              Chat Social</Button>
             <a
             className="btn btn-outline-light btn-floating m-1"
             href="https://github.com/LandoBM/chatSocial-React"
@@ -218,7 +218,7 @@ export default function Portfolio() {
             <h6>This is not a deployed site, this will contain a walkthrough video.</h6>
             </Card.Text>
             <Button variant="primary" href='https://drive.google.com/file/d/1sxcxXv4QEA5ILaeFYAwnoSaoQXBwzy5h/view'>
-              Go somewhere</Button>
+              Skynn</Button>
             <a
             className="btn btn-outline-light btn-floating m-1"
             href="https://github.com/LandoBM/skynnbylandon"
@@ -229,7 +229,7 @@ export default function Portfolio() {
           </Card.Body>
       </Card>
       <Card style={{ width: '30rem', margin: '20px', display:'block' }} className='mx-auto'>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img variant="top" src={Mvc} />
           <Card.Body>
             <Card.Title>Keeping Up With Tech</Card.Title>
             <Card.Text>
@@ -238,7 +238,7 @@ export default function Portfolio() {
             using Handlebars.js as the template language, Sequelize as the ORM, and the express-session npm package for authentication.
             </Card.Text>
             <Button variant="primary" href='https://keepingupwithtech.herokuapp.com/'>
-              Go somewhere</Button>
+              KeepingUpWithTech</Button>
             <a
             className="btn btn-outline-light btn-floating m-1"
             href="https://github.com/LandoBM/keepingupwithtech"

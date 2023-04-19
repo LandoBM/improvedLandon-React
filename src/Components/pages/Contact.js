@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import validator from 'validator';
+import { Button } from 'react-bootstrap'
 
 export default function Contact(props) {
   const [ name, setName ] =useState('')
@@ -70,8 +71,9 @@ export default function Contact(props) {
     setName('')
   }
   return (
+    <div>
     <form>
-      <h1>Contact</h1>
+      <h1 style={{backgroundColor:'green', textAlign:'center'}}>Contact</h1>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Name</label>
         <input value={name} type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" onChange={handleName}/>
@@ -84,9 +86,60 @@ export default function Contact(props) {
         <label for="exampleFormControlTextarea1" class="form-label">Message</label>
         <textarea onChange={handleInput} value={text} class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
       </div>
-      <button type='button' onClick={handleFormSubmit}>
+      <Button type='button' onClick={handleFormSubmit}>
         Send Message
-      </button>
+      </Button>
     </form>
+    <div style={{backgroundColor:'green', textAlign: 'center'}}>
+    <h5>Connect with me!</h5>
+          {/* <!-- Facebook --> */}
+    <a
+      className="btn btn-outline-light btn-floating m-1"
+      href="https://www.facebook.com/landon.murray.144"
+      role="button"
+    >
+      <i className="fa-brands fa-facebook"></i>
+    </a>
+
+          {/* <!-- Twitter --> */}
+    <a
+      className="btn btn-outline-light btn-floating m-1"
+      href="https://twitter.com/codewithlandon!"
+      role="button"
+    >
+      <i className="fab fa-twitter"></i>
+    </a>
+
+          {/* <!-- Instagram --> */}
+    <a
+      className="btn btn-outline-light btn-floating m-1"
+      href="https://www.instagram.com/codew.landon/"
+      role="button"
+    >
+      <i className="fab fa-instagram"></i>
+    </a>
+
+          {/* <!-- Linkedin --> */}
+    <a
+      className="btn btn-outline-light btn-floating m-1"
+      href="https://www.linkedin.com/in/landonbmurray"
+      role="button"
+    >
+      <i className="fab fa-linkedin-in"></i>
+    </a>
+
+          {/* <!-- Github --> */}
+    <a
+      className="btn btn-outline-light btn-floating m-1"
+      href="https://github.com/LandoBM"
+      role="button"
+    >
+      <i className="fab fa-github"></i>
+    </a>
+    </div>
+    <div style={{backgroundColor:'green'}}>
+        .
+      </div>
+  </div>
   );
 }
