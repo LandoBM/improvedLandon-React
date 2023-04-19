@@ -6,10 +6,10 @@ export default function Resume() {
   return (
     <div>
       <div>
-        <h1> Tech Stack </h1>
+        <h1 style={{textAlign:'center', backgroundColor:'green'}}> Tech Stack </h1>
         <Container fluid>
         <Row col-md-6>
-        <h5>Front-End</h5>
+        <h5 style={{textAlign:'center'}}>Front-End</h5>
         {['md'].map((breakpoint) => (
         <ListGroup key={breakpoint} horizontal={breakpoint} className='my-2' style={{textAlign:'center'}}>
           <ListGroupItem>HTML</ListGroupItem>
@@ -22,8 +22,8 @@ export default function Resume() {
         ))}
         </Row>
         <Row>
-        <h5>Back-End</h5>
-        {['md'].map((breakpoint) => (
+        <h5 style={{textAlign:'center'}}>Back-End</h5>
+        {['lg'].map((breakpoint) => (
         <ListGroup key={breakpoint} horizontal={breakpoint} className='my-2' style={{textAlign:'center'}}>
           <ListGroupItem>Node.js</ListGroupItem>
           <ListGroupItem>MySQL</ListGroupItem>
@@ -34,7 +34,7 @@ export default function Resume() {
           <ListGroupItem>APIs</ListGroupItem>
           <ListGroupItem>MVC</ListGroupItem>
           <ListGroupItem>Sequelize</ListGroupItem>
-          <ListGroupItem>Npm</ListGroupItem>
+          <ListGroupItem>NPM</ListGroupItem>
         </ListGroup>
         ))}
         </Row>
@@ -53,7 +53,7 @@ export default function Resume() {
         ))}
         </Row>
         </Container>
-        <h5>Software Systems</h5>
+        <h5 style={{textAlign:'center'}}>Software Systems</h5>
         <Container fluid>
         <Row col-md-6>
         {['md'].map((breakpoint) => (
@@ -64,10 +64,12 @@ export default function Resume() {
         </Row>
         </Container>
       </div>
+      <div style={{textAlign:'center', backgroundColor:'green'}}>
       <h4>Download Resume Here</h4>
-      <a href={resume}>
+      <a href={resume} style={{color:'black'}}>
         Landon's Resume
       </a>
+      </div>
     </div>
   );
 }
