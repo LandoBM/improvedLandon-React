@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../images/resume-gify.gif'
+import resume from '../pages/Resume/resume.pdf'
 import {Container, Row, ListGroup, ListGroupItem} from 'react-bootstrap'
 
 export default function Resume() {
@@ -9,19 +9,32 @@ export default function Resume() {
         <h1> Tech Stack </h1>
         <Container fluid>
         <Row col-md-6>
-        {['lg'].map((breakpoint) => (
+        <h5>Front-End</h5>
+        {['md'].map((breakpoint) => (
         <ListGroup key={breakpoint} horizontal={breakpoint} className='my-2' style={{textAlign:'center'}}>
           <ListGroupItem>HTML</ListGroupItem>
           <ListGroupItem>CSS</ListGroupItem>
           <ListGroupItem>JavaScript</ListGroupItem>
-          <ListGroupItem>Express.js</ListGroupItem>
+          <ListGroupItem>Bootstrap</ListGroupItem>
+          <ListGroupItem>jQuery</ListGroupItem>
+          <ListGroupItem>Moment.js</ListGroupItem>
+        </ListGroup>
+        ))}
+        </Row>
+        <Row>
+        <h5>Back-End</h5>
+        {['md'].map((breakpoint) => (
+        <ListGroup key={breakpoint} horizontal={breakpoint} className='my-2' style={{textAlign:'center'}}>
           <ListGroupItem>Node.js</ListGroupItem>
-          <ListGroupItem>React.js</ListGroupItem>
           <ListGroupItem>MySQL</ListGroupItem>
-          <ListGroupItem>MongoDB</ListGroupItem>
           <ListGroupItem>NoSQL</ListGroupItem>
-          <ListGroupItem>MVC</ListGroupItem>
+          <ListGroupItem>Express.js</ListGroupItem>
+          <ListGroupItem>Mongoose</ListGroupItem>
+          <ListGroupItem>React.js</ListGroupItem>
           <ListGroupItem>APIs</ListGroupItem>
+          <ListGroupItem>MVC</ListGroupItem>
+          <ListGroupItem>Sequelize</ListGroupItem>
+          <ListGroupItem>Npm</ListGroupItem>
         </ListGroup>
         ))}
         </Row>
@@ -40,7 +53,7 @@ export default function Resume() {
         ))}
         </Row>
         </Container>
-        <h1>Software Systems</h1>
+        <h5>Software Systems</h5>
         <Container fluid>
         <Row col-md-6>
         {['md'].map((breakpoint) => (
@@ -51,12 +64,9 @@ export default function Resume() {
         </Row>
         </Container>
       </div>
-      <h1>Resume</h1>
-      <div>
-        <img src={resume}/>
-      </div>
-      <a href='https://docs.google.com/document/d/e/2PACX-1vSHtDyiCTd43tK6iq7XQFLQVTISR2MlDj5p4jXegJ3s5Nb1s9Tedu_KeaMfoXPhg4C4skUFZ-CIlq_g/pub'>
-        Click Here to View Resume
+      <h4>Download Resume Here</h4>
+      <a href={resume}>
+        Landon's Resume
       </a>
     </div>
   );

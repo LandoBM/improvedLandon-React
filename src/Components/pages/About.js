@@ -35,8 +35,9 @@ export default function About() {
         </Col>
       </Row>
       </Container>
-      <div style={{backgroundColor:'green'}}>
-        .
+      <div style={{backgroundColor:'green', textAlign:'center'}}>
+        <h5>Created by Landon Murray</h5>
+        <h6>Copyright ©2023</h6>
       </div>
     </div>
   );
