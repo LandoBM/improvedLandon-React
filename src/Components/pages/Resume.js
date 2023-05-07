@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../pages/Resume/LandonsResume.pdf'
+import resume from '../pages/Resume/LandonResume.pdf'
 import {Container, Row, ListGroup, ListGroupItem} from 'react-bootstrap'
 
 export default function Resume() {

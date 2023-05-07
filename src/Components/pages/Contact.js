@@ -1,56 +1,56 @@
-import React, { useEffect, useState } from 'react';
-import validator from 'validator';
-import { Button } from 'react-bootstrap'
+import React from 'react';
+// import validator from 'validator';
+// import { Button } from 'react-bootstrap'
 
-export default function Contact(props) {
-  const [ name, setName ] =useState('')
-  const [email, setEmail ] =useState('')
-  const [ text, setText ] = useState('')
-  const [ error, setError] =useState(null)
-  const [cursor, setCursor ] = useState(null)
-  const [message, setMessage ]= useState('')
-  const { onChange } = props
+export default function Contact() {
+  // const [ name, setName ] =useState('')
+  // const [email, setEmail ] =useState('')
+  // const [ text, setText ] = useState('')
+  // const [ error, setError] =useState(null)
+  // const [cursor, setCursor ] = useState(null)
+  // const [message, setMessage ]= useState('')
+  // const { onChange } = props
 
 
-  const validateEmail =(e) => {
-    var email = e.target.value
-    if(validator.isEmail(email)) {
-      setMessage('Good Email!')
-    } else {
-      setMessage('Email is not valid, enter a valid email!')
-    }
-  }
+  // const validateEmail =(e) => {
+  //   var email = e.target.value
+  //   if(validator.isEmail(email)) {
+  //     setMessage('Good Email!')
+  //   } else {
+  //     setMessage('Email is not valid, enter a valid email!')
+  //   }
+  // }
 
-  const handleName =(e) => {
-    setName((e.target.value))
-    // setCursor((e.target.selectionStart(cursor, cursor)))
-    onChange && onChange(e)
-  }
-  const handleInput = (e) => {
-    setText((e.target.value))
-    // setCursor((e.target.selectionStart(cursor, cursor)))
-    onChange && onChange(e)
-  }
+  // const handleName =(e) => {
+  //   setName((e.target.value))
+  //   // setCursor((e.target.selectionStart(cursor, cursor)))
+  //   onChange && onChange(e)
+  // }
+  // const handleInput = (e) => {
+  //   setText((e.target.value))
+  //   // setCursor((e.target.selectionStart(cursor, cursor)))
+  //   onChange && onChange(e)
+  // }
 
-  const handleEmail = (e) => {
-    setEmail((e.target.value))
-    // setCursor((e.target.selectionStart(cursor, cursor)))
-    var email = e.target.value
-    if(validator.isEmail(email)) {
-      setMessage('Good Email!')
-    } else {
-      setMessage('Email is not valid, enter a valid email!')
-    }
-  }
+  // const handleEmail = (e) => {
+  //   setEmail((e.target.value))
+  //   // setCursor((e.target.selectionStart(cursor, cursor)))
+  //   var email = e.target.value
+  //   if(validator.isEmail(email)) {
+  //     setMessage('Good Email!')
+  //   } else {
+  //     setMessage('Email is not valid, enter a valid email!')
+  //   }
+  // }
 
   // required name and message effect if not filled out
-  useEffect(function() {
-    if(name.length === 0 || message.length === 0)
-    // name.setSelectionRange(cursor, cursor)
-    {
-      setError('* Name and Message Required')
-    }
-  }, [message, name, cursor])
+  // useEffect(function() {
+  //   if(name.length === 0 || message.length === 0)
+  //   // name.setSelectionRange(cursor, cursor)
+  //   {
+  //     setError('* Name and Message Required')
+  //   }
+  // }, [message, name, cursor])
 
 // email effect used to check email validation
   // useEffect(function(){
@@ -64,15 +64,15 @@ export default function Contact(props) {
   //   }
   // }, [email, error])
 
-  const handleFormSubmit = (event) => {
-    event.preventDefault()
+  // const handleFormSubmit = (event) => {
+  //   event.preventDefault()
 
-    alert(`Message sent from ${name} to Landon`)
-    setName('')
-  }
+  //   alert(`Message sent from ${name} to Landon`)
+  //   setName('')
+  // }
   return (
     <div>
-    <form>
+    {/* <form>
       <h1 style={{backgroundColor:'green', textAlign:'center'}}>Contact</h1>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Name</label>
@@ -89,7 +89,7 @@ export default function Contact(props) {
       <Button type='button' onClick={handleFormSubmit}>
         Send Message
       </Button>
-    </form>
+    </form> */}
     <div style={{backgroundColor:'green', textAlign: 'center'}}>
     <h5>Connect with me!</h5>
           {/* <!-- Facebook --> */}
